@@ -1,0 +1,1 @@
+# GetData.php Clase de Consumir servicios REST
