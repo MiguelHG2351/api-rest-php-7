@@ -1,5 +1,12 @@
 <?php
 
+$user = array_key_exists('PHP_AUTH_USER', $_SERVER) ? $_SERVER['PHP_AUTH_USER'] : '';
+$PWD = array_key_exists('PHP_AUTH_PW', $_SERVER) ? $_SERVER['PHP_AUTH_PW'] : '';
+
+if($user != 'miguel' || $PWD != '1234') {
+    die;
+}
+
 // Definimos los recursos disponibles
 $allowedResourceTypes = [
     'books',
