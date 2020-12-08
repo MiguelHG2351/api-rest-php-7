@@ -60,10 +60,24 @@ switch (strtoupper( $_SERVER['REQUEST_METHOD'])) {
 
         break;
     case 'PUT':
-        
+        // Validamos que el recurso exista
+        if(!empty($resourceId) && array_key_exists($resourceId, $books) ) {
+            // entrada cruda
+            $json = file_get_contents('php://input');
+            $books[$resourceId] = json_decode($json, true);
+
+            echo json_encode($books);
+        }
+
         break;
 
     case 'DELETE':
+        // Validamos que el recurso exista
+        if(!empty($resourceId) && array_key_exists($resourceId, $books) ) {
+            unset($books[ $resourceId ]);
+        }
+
+        echo json_encode($books);
         
         break;
     
