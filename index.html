@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>XD</title>
+    </head>
+    <body>
+        <h1>XDDD</h1>
+        <script>
+            async function getData() {
+              const response = await fetch("http://localhost:3000/books", {
+                headers: {
+                  "X-Token": "5d0937455b6744.68357201",
+                  mode : 'no-cors',
+                  'Access-Control-Allow-Origin': '*'
+                },
+              });
+              
+              const data = await response.json()
+              console.log(data)
+            }
+            getData()
+        </script>
+    </body>
+</html>
