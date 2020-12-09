@@ -18,14 +18,12 @@
 
 Generate_hash | hmac_auth
 ------------- | ---------
-
 **hash, time** | **auth hash, time** 
 
 #### access_token.php
 
 access_token | token_auth
 ------------- | ---------
-
 **token, secret** | **auth token, secret** 
 
 
