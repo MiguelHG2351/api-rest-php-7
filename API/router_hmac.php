@@ -7,11 +7,11 @@ if(preg_match('/\/([^\/]+)\/([^\/]+)/', $_SERVER['REQUEST_URI'], $matches ) ) {
     $_GET['resource_id'] = $matches[2];
     
     error_log(print_r($matches, 1));
-    require 'get.php';
+    require 'hmac_auth.php';
 } elseif(preg_match('/\/([^\/]+)\/?/', $_SERVER['REQUEST_URI'], $matches ) ) {
     $_GET['resource_type'] = $matches[1];
     error_log(print_r($matches, 1));
-    require 'get.php';
+    require 'hmac_auth.php';
 } else {
     
     error_log('No matches');
