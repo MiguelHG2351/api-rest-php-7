@@ -1,6 +1,6 @@
 # Carpeta API
 
-# Token
+# Auth
 
 -   http_auth.php
 -   hmac_auth.php
@@ -29,14 +29,14 @@ access_token | token_auth
 
 # Carpeta errros
 
-- index.php
+#### index.php
 
-Es el programa
+- Es el programa
 
-- router.php
+#### router.php
 
-Maneja las rutas
+- Maneja las rutas
 
-- try_catch.php
+#### try_catch.php
 
-Maneja los errores
+- Maneja los errores
