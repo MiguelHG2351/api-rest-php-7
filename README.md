@@ -40,3 +40,5 @@ access_token | token_auth
 #### try_catch.php
 
 - Maneja los errores
+
+#### Integración Backend for FrontEnd
